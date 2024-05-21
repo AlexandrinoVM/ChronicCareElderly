@@ -1,2 +1,3 @@
 <?php
-  echo "teste";
+
+header("location:pages/home.php");

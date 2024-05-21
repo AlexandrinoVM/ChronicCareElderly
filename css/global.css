@@ -1,0 +1,19 @@
+/* RESET PAGE PARAM */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #565656;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
