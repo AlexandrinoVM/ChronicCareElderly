@@ -1,7 +1,7 @@
 <?php
 
-function header() {
-  <<<HTML
+function headers() {
+  return <<<HTML
     <header>
       <div class="container">
         <h1>Nome do Blog</h1>
