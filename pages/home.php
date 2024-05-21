@@ -19,9 +19,14 @@
       <div class="container">
         <h2><?= $mensagem["titulo_principal"] ?></h2>
         <p> <?= $mensagem["apresentacao"] ?> </p>
-        <a href="#" class="btn">Ver Matéria</a>
+        <a href="#" class="btn"><?= $mensagem["ver_materia"] ?> </a>
       </div>
     </section>
   </main>
+
+  <?php
+    include_once("../components/footer.php");
+    echo footer();
+  ?>
 </body>
 </html>
