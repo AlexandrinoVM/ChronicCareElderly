@@ -7,6 +7,10 @@
   ?>
 </head>
 <body>
+
+  <?php
+    include_once("../components/header.php");
+  ?>
   
   <main>
     <section class="hero">
