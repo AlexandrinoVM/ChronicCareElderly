@@ -9,7 +9,7 @@
 <body>
   
   <main>
-    <section>
+    <section class="hero">
       <div class="container">
         <h2><?= $mensagem["titulo_principal"] ?></h2>
         <p> <?= $mensagem['apresentacao'] ?> </p>
