@@ -1,0 +1,25 @@
+.hero {
+  background-image: url("/assets/image.png");
+  background-size: cover;
+  background-position: center 35%;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
