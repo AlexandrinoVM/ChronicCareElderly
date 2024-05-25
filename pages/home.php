@@ -28,11 +28,30 @@
         <h2><?= $mensagem["titulo_principal"] ?></h2>
         <p> <?= $mensagem["apresentacao"] ?> </p>
       </div>
+      <a href="#content" class="page_A">V</a>
     </section>
   </main>
 
-  <section class="articles">
+  <section id="content" class="articles">
     <?php
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
+      echo article(1);
+      echo "<br><br>";
+      echo "<br><br>";
       echo article(1);
     ?>
   </section>
