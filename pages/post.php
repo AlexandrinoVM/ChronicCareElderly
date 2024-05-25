@@ -3,7 +3,7 @@
   
   include_once("../components/head.php");
   include_once("../components/header.php");
-  include_once("../components/articles.php");
+  include_once("../components/article.php");
   include_once("../components/footer.php");
 ?>
 

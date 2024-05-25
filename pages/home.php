@@ -1,9 +1,10 @@
 <?php
   include_once("../admin/idiomas.php");
+  include_once("../admin/articles.php");
   
   include_once("../components/head.php");
   include_once("../components/header.php");
-  include_once("../components/articles.php");
+  include_once("../components/article.php");
   include_once("../components/footer.php");
 
 ?>
@@ -34,19 +35,9 @@
 
   <section id="content" class="articles">
     <?php
+      echo article(0);
+      echo "<br><br>";
       echo article(1);
-      echo "<br><br>";
-      echo article(2);
-      echo "<br><br>";
-      echo article(3);
-      echo "<br><br>";
-      echo article(4);
-      echo "<br><br>";
-      echo article(5);
-      echo "<br><br>";
-      echo article(6);
-      echo "<br><br>";
-      echo article(7);
       echo "<br><br>";
     ?>
   </section>
