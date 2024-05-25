@@ -36,23 +36,18 @@
     <?php
       echo article(1);
       echo "<br><br>";
+      echo article(2);
       echo "<br><br>";
-      echo article(1);
+      echo article(3);
       echo "<br><br>";
+      echo article(4);
       echo "<br><br>";
-      echo article(1);
+      echo article(5);
       echo "<br><br>";
+      echo article(6);
       echo "<br><br>";
-      echo article(1);
+      echo article(7);
       echo "<br><br>";
-      echo "<br><br>";
-      echo article(1);
-      echo "<br><br>";
-      echo "<br><br>";
-      echo article(1);
-      echo "<br><br>";
-      echo "<br><br>";
-      echo article(1);
     ?>
   </section>
 
