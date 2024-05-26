@@ -20,15 +20,12 @@
   <link rel="stylesheet" href="../css/post.css">
 </head>
 <body>
-<!-- <h1><?= $artigo_content[$id]['titulo']?></h1>
-  <p><?= $artigo_content[$id]['conteudo']?></p> -->
   <?php
   foreach ($artigo_content as $artigo) {
     if ($artigo['id'] == $id) {
       // Acessando título e conteúdo em português
       echo "<h1>" . $artigo['lang'][$lang]['titulo'] . "</h1>";
       echo "<p>" . $artigo['lang'][$lang]['conteudo'] . "</p>";
-      
     }
   }
   ?>
