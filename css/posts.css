@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.conteudo {
+  padding: 20px 0;
+}
+
+.conteudo h1 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.conteudo p {
+  margin: 10px 0;
+  color: #fef;
+  font-size: 1.1em;
+  line-height: 1.8;
+}

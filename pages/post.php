@@ -15,13 +15,12 @@
   <?php
     echo head("Como cuidar da saúde física dos idosos");
   ?>
-  <link rel="stylesheet" href="../css/post.css">
+  <link rel="stylesheet" href="../css/posts.css">
 </head>
 <body>
   <?php
   echo headers();
   ?>
-  
   <div class="conteudo">
     <?php
       foreach ($artigo_content as $artigo) {
