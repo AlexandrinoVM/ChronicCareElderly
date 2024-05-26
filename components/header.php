@@ -4,7 +4,7 @@ function headers() {
   return <<<HTML
     <header>
       <div class="container">
-        <h1>Nome do Blog</h1>
+        <h1>Sênior com Saúde</h1>
         <nav>
           <ul>
             <li><a href="#">Home</a></li>

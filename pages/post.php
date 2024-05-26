@@ -21,6 +21,9 @@
 </head>
 <body>
   <?php
+
+  echo headers();
+  
   foreach ($artigo_content as $artigo) {
     if ($artigo['id'] == $id) {
       // Acessando título e conteúdo em português
