@@ -29,6 +29,18 @@ header {
   float: left;
 }
 
+nav {
+  float: right;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 /* Articles */
 .post {
