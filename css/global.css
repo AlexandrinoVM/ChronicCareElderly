@@ -36,10 +36,6 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
-}
 
 nav a:hover {
   text-decoration: underline;

@@ -18,7 +18,52 @@
   <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
+  <style>
+    nav {
+     
+      gap: 20px; /* Espaço entre os links */
+       
+    }
+    nav a{
+      color: white;
+      align-items: center;
+      align-items: center;
+    }
+    nav a:hover{
+      opacity: 0.8;
+    }
+    .link {
+ 
+  
+  
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
 
+/* Estilo para link de login */
+.login-link {
+  background-color: #565656;
+  color: #fff;
+}
+
+/* Estilo para link de post */
+.post-link {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+/* Efeito de hover */
+.link:hover {
+  border-color: #333;
+  background-color: #fff;
+  color: #333;
+}
+  </style>
+    
   <?php
     echo headers();
   ?>
