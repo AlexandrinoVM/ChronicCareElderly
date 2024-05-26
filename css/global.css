@@ -29,24 +29,9 @@ header {
   float: left;
 }
 
-nav {
-  float: right;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 
