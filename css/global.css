@@ -41,6 +41,10 @@ nav a {
   color: #fff;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 
 /* Articles */
 .post {
