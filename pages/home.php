@@ -29,7 +29,7 @@
         <h2><?= $mensagem["titulo_principal"] ?></h2>
         <p> <?= $mensagem["apresentacao"] ?> </p>
       </div>
-      <a href="#content" class="page_A">V</a>
+      <a href="#content" class="page_A"><img src="../assets/ArrowDownwards.svg" alt="<?= $mensagem["ver_materia"]?>"></a>
     </section>
   </main>
 

@@ -8,6 +8,28 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.back_button {
+  position: absolute;
+  top: 6%;
+  left: 200px;
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #232323;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back_button:hover {
+  cursor: pointer;
+  background: #111;
+}
+
 header {
   text-align: center;
   padding: 20px 0;

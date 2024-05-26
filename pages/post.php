@@ -18,9 +18,13 @@
   <link rel="stylesheet" href="../css/posts.css">
 </head>
 <body>
-  <?php
-  echo headers();
-  ?>
+  <header>
+    <div class="container">
+      <!-- <input class="back_button" type="button" value="<"> -->
+      <a class="back_button" href="../pages/home.php"><img src="../assets/BackArrow.svg" alt="<"></a>
+      <h1>Sênior com Saúde</h1>
+    </div>
+  </header>
   <div class="conteudo">
     <?php
       foreach ($artigo_content as $artigo) {

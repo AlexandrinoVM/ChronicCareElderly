@@ -1,5 +1,4 @@
 <?php
-
 function headers() {
   return <<<HTML
     <header>
