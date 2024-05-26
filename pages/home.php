@@ -35,10 +35,18 @@
 
   <section id="content" class="articles">
     <?php
+
+
       echo article(0);
       echo "<br><br>";
       echo article(1);
       echo "<br><br>";
+      //foreach ($artigo as $artigoc) {
+      
+        //  echo "<h1>" . $artigoc['lang'][$lang]['titulo'] . "</h1>";
+          //echo "<p>" . $artigoc['lang'][$lang]['artigo'] . "</p>";
+      //}
+
     ?>
   </section>
 
