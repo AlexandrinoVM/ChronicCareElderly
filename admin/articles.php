@@ -33,10 +33,10 @@ $artigo[] = array(
     'titulo' => 'Prevention and promotion of mental health in aging: concepts and interventions',
     'artigo' => 'The increase in the elderly population in Brazil and worldwide requires a reorganization of health services to address the complex needs of this age group,
     with a focus on mental health. This article analyzes the challenges and strategies in promoting and protecting the mental health of the elderly within the context of primary health care.'),
-     'es' => array(
+      'es' => array(
         'titulo' => 'Prevention and promotion of mental health in aging: concepts and interventions',
         'artigo' => 'El aumento de la población de edad en Brasil y en todo el mundo requiere una reorganización de los servicios de salud para atender las complejas necesidades de este grupo de edad, con énfasis en la salud mental. En este artículo se analizan los retos y estrategias para promover y proteger la salud mental de los ancianos en el contexto de la atención primaria de la salud.'
-     )
+      )
   ),
 );
 
