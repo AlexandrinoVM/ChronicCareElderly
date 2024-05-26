@@ -37,9 +37,9 @@
     <?php
 
 
-      echo article(0);
+      echo article(0,$lang);
       echo "<br><br>";
-      echo article(1);
+      echo article(1,$lang);
       echo "<br><br>";
       //foreach ($artigo as $artigoc) {
       
