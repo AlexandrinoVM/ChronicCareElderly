@@ -1,19 +1,17 @@
 <?php
   include_once("../admin/idiomas.php");
+  include_once("../admin/articles.php");
   
   include_once("../components/head.php");
   include_once("../components/header.php");
   include_once("../components/article.php");
   include_once("../components/footer.php");
-  include_once("../admin/articles.php");
+
+  $id = $_GET['id'];
 ?>
-  <?php
-    $id = $_GET['id'];
-  ?>
 <!DOCTYPE html >
 <html lang="pt">
 <head>
-
   <?php
     echo head("Como cuidar da saúde física dos idosos");
   ?>
@@ -21,16 +19,22 @@
 </head>
 <body>
   <?php
-
   echo headers();
+  ?>
   
-  foreach ($artigo_content as $artigo) {
-    if ($artigo['id'] == $id) {
-      // Acessando título e conteúdo em português
-      echo "<h1>" . $artigo['lang'][$lang]['titulo'] . "</h1>";
-      echo "<p>" . $artigo['lang'][$lang]['conteudo'] . "</p>";
-    }
-  }
+  <div class="conteudo">
+    <?php
+      foreach ($artigo_content as $artigo) {
+        if ($artigo['id'] == $id) {
+          echo "<h1>".$artigo['lang'][$lang]['titulo']."</h1>";
+          echo "<p>".$artigo['lang'][$lang]['conteudo']."</p>";
+        }
+      }
+    ?>
+  </div>
+
+  <?php
+    echo footer();
   ?>
 </body>
 </html>

@@ -35,8 +35,6 @@
 
   <section id="content" class="articles">
     <?php
-
-
       echo article(0,$lang);
       echo "<br><br>";
       echo article(1,$lang);
