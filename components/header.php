@@ -6,7 +6,7 @@ function headers() {
         <h1>Sênior com Saúde</h1>
         <nav>
           </script>
-          <a class='link login-link'>Add Post</a>
+          <a class='link login-link' href='create_post.php' id='createPostBtn'>Add Post</a>
           <a class='link login-link'>Login / Register</a>
         </nav>
       </div>

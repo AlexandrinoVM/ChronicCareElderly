@@ -21,26 +21,23 @@
   <style>
     nav {
      
-      gap: 20px; /* Espaço entre os links */
+      gap: 15px; /* Espaço entre os links */
        
     }
     nav a{
       color: white;
       align-items: center;
-      align-items: center;
+      
     }
     nav a:hover{
       opacity: 0.8;
     }
     .link {
- 
-  
-  
   border: 2px solid transparent;
   border-radius: 5px;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -63,7 +60,6 @@
   color: #333;
 }
   </style>
-    
   <?php
     echo headers();
   ?>
@@ -89,6 +85,9 @@
         //  echo "<h1>" . $artigoc['lang'][$lang]['titulo'] . "</h1>";
           //echo "<p>" . $artigoc['lang'][$lang]['artigo'] . "</p>";
       //}
+      
+    
+
 
     ?>
   </section>
