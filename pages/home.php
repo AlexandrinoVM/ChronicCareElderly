@@ -59,6 +59,16 @@
   background-color: #fff;
   color: #333;
 }
+.post{
+  
+  margin: 20px;
+  
+} 
+.post a{
+  color: white;
+}
+
+
   </style>
   <?php
     echo headers();
@@ -80,6 +90,9 @@
       echo "<br><br>";
       echo article(1,$lang);
       echo "<br><br>";
+
+      $posts = getArticles();
+      echo $posts
       //foreach ($artigo as $artigoc) {
       
         //  echo "<h1>" . $artigoc['lang'][$lang]['titulo'] . "</h1>";

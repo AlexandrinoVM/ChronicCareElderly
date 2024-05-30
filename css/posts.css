@@ -55,9 +55,15 @@ header p {
   margin-top: 20px;
 }
 
+.conteudo h2{
+  color: #fff;
+  margin-top: 20px;
+}
+
 .conteudo p {
   margin: 10px 0;
   color: #fef;
   font-size: 1.1em;
   line-height: 1.8;
 }
+
