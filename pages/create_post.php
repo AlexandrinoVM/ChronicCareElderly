@@ -1,12 +1,23 @@
 <?php
-  include_once("../admin/idiomas.php");
-  include_once("../admin/articles.php");
- 
-  include_once("../components/head.php");
-  include_once("../components/header.php");
-  include_once("../components/article.php");
-  include_once("../components/footer.php");
+  include_once('../bd/config.php');
 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $stmt = $conn->prepare("INSERT INTO posts (title, content) VALUES (?, ?)");
+    $stmt->bind_param("ss", $title, $content);
+
+    
+    if ($stmt->execute()) {
+        echo "Novo post criado com sucesso!";
+    } else {
+        echo "Erro: " . $stmt->error;
+    }
+    $stmt->close();
+    $conn->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,16 +28,19 @@
     <title>Create post</title>
 </head>
 <body>
-    <form action="post">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="">titulo do artigo</label>
         <br>
-        <input type="text" placeholder="article title">
+        <input type="text"  name="title" placeholder="article title">
         <br>
         <label for="">conteudo do artigo</label>
         <br>
-        <textarea name="" id=""></textarea>
+        <textarea  name="content" id=""></textarea>
         <br>
+
         <button type="submit">comfirm</button>
     </form>
 </body>
 </html>
+
+
