@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $action = $_POST['action'];
 
     if ($action == 'register') {
-       
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT); 
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
         if ($stmt = $conn->prepare($sql)) {
@@ -21,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->close();
         }
     } elseif ($action == 'login') {
-      
         $sql = "SELECT password FROM users WHERE username = ?";
         if ($stmt = $conn->prepare($sql)) {
             $stmt->bind_param("s", $user);
@@ -48,7 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $updateStmt->close();
                     }
 
-                   
                     $_SESSION['loggedin'] = true;
                     $_SESSION['username'] = $user;
 
@@ -76,6 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login_register</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login_register.css">
 </head>
 <body>
 
@@ -93,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="password" id="password" name="password" required>
     <br>
     <br>
-    <button type="submit" name="action" value="register">registrar</button> 
+    <button type="submit" name="action" value="register">registrar</button>
     <button type="submit" name="action" value="login">login</button>
 </form>
 
