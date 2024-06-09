@@ -11,8 +11,8 @@ include_once('../bd/config.php');
 
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    
-    header("Location: login.php");
+   
+    header("Location: login_register.php");
     exit();
 }
 
