@@ -7,7 +7,7 @@ function headers() {
         <nav>
           </script>
           <a class='link login-link' href='../pages/create_post.php' id='createPostBtn'>Add Post</a>
-          <a class='link login-link'>Login / Register</a>
+          <a class='link login-link' href='../pages/login_register.php'>Login / Register</a>
         </nav>
       </div>
       
