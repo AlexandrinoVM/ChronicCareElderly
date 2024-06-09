@@ -10,8 +10,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Checando a conexão
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 121a22826ed069cf75feed0cea61b9378dc7863f
