@@ -76,24 +76,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../css/login_register.css">
 </head>
 <body>
+<header>
+    <div class="container">
+    <style>
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      </style>
+        <h1><a href="../pages/home.php">Sênior com Saúde</a></h1>
+    </div>
+    </header>
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <label for="">criar/entrar</label>
-    <br>
-    <br>
-    <label for="">usuário</label>
-    <br>
-    <input type="text" id="user" name="user" required>
-    <br>
-    <br>
-    <label for="">senha</label>
-    <br>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <br>
-    <button type="submit" name="action" value="register">registrar</button>
-    <button type="submit" name="action" value="login">login</button>
-</form>
-
+<div class="formulario">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="">criar/entrar</label>
+        <br>
+        <br>
+        <label for="">usuário</label>
+        <br>
+        <input type="text" id="user" name="user" required>
+        <br>
+        <br>
+        <label for="">senha</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <button type="submit" name="action" value="register">registrar</button>
+        <button type="submit" name="action" value="login">login</button>
+    </form>
+</div>
 </body>
 </html>

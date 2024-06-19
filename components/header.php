@@ -2,10 +2,15 @@
 function headers() {
   return <<<HTML
     <header>
+      <style>
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      </style>
       <div class="container">
-        <h1>Sênior com Saúde</h1>
+        <h1><a href="../pages/home.php">Sênior com Saúde</a></h1>
         <nav>
-          </script>
           <a class='link login-link' href='../pages/create_post.php' id='createPostBtn'>Add Post</a>
           <a class='link login-link' href='../pages/login_register.php'>Login / Register</a>
         </nav>

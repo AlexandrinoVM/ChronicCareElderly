@@ -27,32 +27,29 @@
   </header>
   <div class="conteudo">
     <?php
-    if($id == 0 || $id ==1 ){
+    if($id == 0 || $id == 1 ){
       foreach ($artigo_content as $artigo) {
         if ($artigo['id'] == $id) {
           echo "<h1>".$artigo['lang'][$lang]['titulo']."</h1>";
           echo "<p>".$artigo['lang'][$lang]['conteudo']."</p>";
         }
       }
-    }else{
+    }
       include_once('../bd/config.php');
       $sql = "SELECT title, content FROM posts WHERE id = ?";
-          $stmt = $conn->prepare($sql);
-          $stmt->bind_param("i", $id);
-          $stmt->execute();
-          $stmt->bind_result($title, $content);
-          $stmt->fetch();
-          $stmt->close();
+      $stmt = $conn->prepare($sql);
+      $stmt->bind_param("i", $id);
+      $stmt->execute();
+      $stmt->bind_result($title, $content);
+      $stmt->fetch();
+      $stmt->close();
 
-          if ($title && $content) {
-              echo "<h1>$title</h1>";
-              echo "<p>$content</p>";
-          } else {
-              echo "<p>Post not found.</p>";
-          }
-    }
-
-
+      if ($title && $content) {
+          echo "<h1>$title</h1>";
+          echo "<p>$content</p>";
+      } else {
+          echo "<p>Post not found.</p>";
+      }
     ?>
   </div>
 

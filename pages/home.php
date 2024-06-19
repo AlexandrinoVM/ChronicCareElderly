@@ -17,18 +17,13 @@
   ?>
   <link rel="stylesheet" href="../css/home.css">
 
-  
-   
-
 
 </head>
 <body>
 <div id="main content">
   <style>
     nav {
-     
       gap: 15px; /* Espaço entre os links */
-       
     }
     nav a{
       color: white;

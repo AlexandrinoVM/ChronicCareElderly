@@ -8,7 +8,7 @@ $artigo[] = array(
   'lang' => array('pt' => array(
     'titulo' => 'Ações de promoção e proteção à saúde mental do idoso na atenção primária à saúde',
     'artigo' => 'O aumento da população idosa no Brasil e no mundo exige uma reestruturação dos serviços de saúde para abordar as complexas necessidades físicas, 
-    emocionais e sociais dessa faixa etária, com destaque para a saúde mental. 
+    emocionais e sociais dessa faixa etária, com destaque para a saúde mental.
     Este artigo analisa as ações de promoção e proteção à saúde mental dos idosos no contexto da atenção primária à saúde'),
       'en' => array(
     'titulo' => 'Actions to promote and protect the mental health of the elderly in primary health care',
